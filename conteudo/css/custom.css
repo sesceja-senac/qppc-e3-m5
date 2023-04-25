@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'PermanentMarker';
+    src: url('../font/PermanentMarker.ttf');
+}
+
+.titulo-conteudo {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    z-index: 99;
+}
+.titulo-conteudo .container {
+    background-color: transparent;
+}

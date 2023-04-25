@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>A prestação de contas de projetos culturais</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../assets/css/preloader.css">
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/template.css">
+    <link rel="stylesheet" href="../assets/drag/js/dragula.css">
+    <link rel="stylesheet" href="../assets/drag/css/game-custom.css">
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="../assets/print/print.css">
+    <link rel="stylesheet" href="css/custom.css">
+   
+
+  </head>
+  <body class="bg-sesc">
+    <div class="preloader">
+        <div class="anim"></div>
+        <h1>Aguarde enquanto o conteúdo é carregado.</h1>
+    </div>
+    <!-- MARCA D´ÁGUA -->
+    <img src="../assets/img/logo_sesc_horizontal.svg" id="marcadaguaLogo">
+
+    <header id="topo" class="sesc no-print">
+        <img src="../assets/img/cabecalho/cabecalho.png" class="d-none d-lg-block img-fluid" alt="">        
+    </header>
+    <!-- Section principal deve ter o booklet, pois faz parte do print.js -->    
+    <section id="booklet">
+        <!--Dentro do section devemos ter um elemento com a classe paginas, para funcionar a paginação/print-->
+        <header class="titulo-conteudo mb-0 print">
+            <div class="container" style="padding-top:1px">
+                <!--titulo do curso para o print e leitor de tela-->
+                <h1 id="nome-curso" class="d-none print mt-0 text-center w-100">Produtor Cultural</h1>
+                <div class="row g-0 pb-4 pt-4">
+                    <div class="col-9 d-flex flex-column justify-content-center align-items-start">                      
+                        <h2 class="visually-hidden">Mundo do trabalho da produção cultural</h2>
+                    </div>
+                    <div class="col-3 d-flex flex-column justify-content-center align-items-end">
+                        <button data-pdf="true" name="button" class="bt-print bto-imprimir no-print"><i class="fas fa-print "></i> imprimir</button>                            
+                    </div>                                       
+                </div>
+            </div>         
+        </header>
+        <section class="paginas">
+            <div class="pagina">
+                <div class="container">
+                    <h3>Introdução</h3>
+                    <figure class="text-center my-5" data-aos="zoom-in">
+                        <img src="img/fig1.png" class="img-fluid d-none d-lg-block print mx-auto" alt="">
+                        <p class="d-lg-none text-center no-print" aria-hidden="true">Clique ou toque para ampliar.</p>
+                        <a href="img/fig1.png" class="d-block d-lg-none no-print" target="_blank" aria-hidden="true">
+                            <img src="img/fig1.png" class="img-fluid" alt="">
+                        </a>
+                        <figcaption class="figure-caption mt-3">
+                            Figura 1 – Dançarina de frevo no Carnaval de Olinda<br>
+                            Fonte: Albuquerque (2023)   
+                        </figcaption>
+                    </figure>
+                    <p class="visually-hidden no-print">A imagem mostra uma paisagem da cidade de Olinda, com duas casas ao fundo, uma palmeira do lado esquerdo e muitas sombrinhas de frevo. No centro da imagem há uma dançarina de frevo em um salto. Ela está sorrindo e segurando com o braço direito uma sombrinha de frevo no alto. </p>
+                    <p>Olá, estudante. Chegamos ao quinto e último módulo da etapa 3 de produção cultural. Este é também o ponto final de nossa trajetória de conhecimentos da qualificação profissional. </p>
+                    <p>Percorremos um caminho de descobertas.</p>
+                    <!--aqui vai infográfico-->
+                    <div class="visually-hidden print">
+                        <ul>
+                            <li>Descobrimos que ninguém está fora da cultura e que os modos de fazer, a comida, o jeito de falar, as danças, os cantos, entre tantas outras coisas, tudo faz parte da cultura. </li>
+                            <li>Descobrimos que a cultura, além da sua dimensão simbólica, tem também uma dimensão econômica, ou seja, a cultura gera renda e emprego. </li>
+                            <li>Descobrimos também que o produtor cultural é o profissional que opera com essas duas dimensões da cultura: ao mesmo tempo que reconhece e valoriza a dimensão simbólica, organiza e promove a dimensão econômica a partir de atividades econômicas baseadas na cultura. </li>
+                            <li>Descobrimos principalmente que, com uma formação adequada e experiência profissional, existe um lugar para nós na produção cultural. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Paginação do print-->
+        <footer class="text-center no-print container">
+            <ul class="pagination">
+  
+            </ul>
+        </footer>   
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- print legado dos técnicos -->
+    <!-- descomentar essa linha caso queira um print.css e um leitor.css exclusivo para o conteudo ao usar o botao imprimir-->
+    <!--
+    <script>
+        var custom_print_path = 'assets/css/';
+        var custom_leitor_path = 'assets/css/';
+    </script>    
+    -->   
+    <script src="../assets/print/print.js"></script>
+    <script src="../assets/print/template.config.js"></script>
+
+    <script src="../assets/js/audio-player.js"></script>
+    <script src="../assets/interativos/esquema_bru/esquema-bru.js"></script>
+    <script src="../assets/js/geral.js"></script>
+    <script src="../assets/js/aos.js"></script>
+    <script>AOS.init()</script>
+ <!-- Versao atual do handtalk -->
+    <script>
+        var scriptElem=document.createElement("script");
+        scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
+        scriptElem.charset="UTF-8",
+        scriptElem.onload=function(){
+            window.ht = new HT({
+                token:"bf5b7efb148a829a126a0e0c9fd533bf",
+                align:"top",
+                videoEnabled: true,
+                ytEmbedReplace: true,           
+                mobileConfig:{align:"right",
+                                actionsAlign:"top",
+                                customButtonStyle:{
+                                    borderRadius:"6px",
+                                    size:"38px",
+                                    horizontalMargin:"13px",
+                                    bottomMargin:"140px",
+                                    rightMargin:"40px"}
+                                }
+                });        
+            $('.ht-skip').attr("aria-hidden","true")
+        },
+    document.body.appendChild(scriptElem);
+    
+    </script>
+</body>
+</html>
