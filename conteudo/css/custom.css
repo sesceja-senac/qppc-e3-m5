@@ -1,14 +1,107 @@
 @font-face {
     font-family: 'PermanentMarker';
-    src: url('../font/PermanentMarker.ttf');
+    src: url('../fonts/PermanentMarker.ttf');
 }
 
 .titulo-conteudo {
-    position: absolute;
-    width: 100%;
-    background-color: transparent;
-    z-index: 99;
+position: absolute;
+width: 100%;
+background-color: transparent;
+z-index: 99;
 }
 .titulo-conteudo .container {
     background-color: transparent;
+}
+
+h2{
+    font-family:PermanentMarker;
+    color: #000;
+    margin: 2.5em auto;
+}
+h3, h4, h5{
+    font-family:PermanentMarker;
+    color: #000;
+    margin: 1em auto;
+}
+
+/*paginação*/
+footer li.active a {
+color: #fff;
+background-color: #00838D;
+}
+.pagination .active {
+transform: translateY(-8px);
+pointer-events:none;
+}
+footer a:visited {
+color: #7a7a7a;
+background-color: #c4c4c4;
+}
+
+.container{
+padding-left: 40px;
+padding-right: 40px;
+}
+
+.pg1, .pg2, .pg3, .pg4{
+background: rgb(133,229,229);
+}
+
+.bloco1{
+padding-top: 5%;
+padding-bottom: 5%;
+}
+
+footer.container{
+position: relative;
+left: 0px;
+right: 0px;
+z-index: 2;
+bottom: 0px;
+margin: auto;
+background: rgb(133,229,229);
+
+}
+.conteudo_postit{
+background: url(../img/postit.png);
+background-repeat: no-repeat;
+background-size: 100%;
+padding: 30px 30px;
+margin: -5px 0;
+width:490px;
+height: 439px;
+background-position: relative center;
+margin: auto;
+}
+.conteudo_infografico{
+background: url(../img/infografico.png);
+background-repeat: no-repeat;
+background-size: 100%;
+width: 629px;
+height:1086px;
+background-position: relative center;
+margin: auto;
+}
+.texto1
+{
+padding-right: 249px;
+border-left-width: 0px;
+padding-left: 57px;
+padding-top: 140px;
+position: relative;
+}
+
+@media screen and (max-width: 430px){
+    .conteudo_infografico{
+       background:url(../img/infografico_layout.png);
+       background-repeat: no-repeat;
+       background-size: 100%;
+       width: 629px;
+       height:1086px;
+       background-position: relative center;
+       margin: auto;
+    }
+.texto1{
+    display: none;
+}
 }
