@@ -111,6 +111,60 @@ padding-right: 287px;
     padding-right: 158px;
 }
 
+.pg1{
+background:url('../img/teclado.png') right top, url('../img/bg.jpg');
+background-repeat: no-repeat, repeat;
+}
+
+.pg1 .bloco2
+{
+background: url('../img/notepad.png') left bottom no-repeat;
+}
+
+[data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+    transition-timing-function: ease;
+}
+
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+    transition-duration: .8s;
+}
+
+
+/*pg2*/
+.pg2{
+background:url(../img/bg.jpg);
+}
+
+.painelbt1:hover{
+background: url(../img/painel1_bt1_hover.png);
+background-repeat: no-repeat;
+z-index: 4;
+}
+
+.pg2.img-painel1, .img-painel2, .img-painel3, .img-painel4{
+position: relative;
+z-index: 3;
+}
+
+.pg2 .container .painel-caracteristicas{
+padding-right: 0px;
+padding-left: 0px;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+.btn{
+    padding: 0em;
+}
+.card{
+    background-color:#00838D;
+}
+
+.text-card{
+    color: #fff;
+}
+
+/*pg3*/
 .pg3
 {
     background:url('../img/img_esq.png') left, url('../img/img_dir.png') right, url('../img/bg.jpg');
@@ -134,23 +188,46 @@ padding-right: 287px;
     padding-bottom: 20px;
 }
 
-
-@media screen and (max-width: 430px){
-    .conteudo_infografico{
-       background:url(../img/infografico_layout.png);
-       background-repeat: no-repeat;
-       background-size: 100%;
-       width: 629px;
-       height:1086px;
-       background-position: relative center;
-       margin: auto;
-    }
-.texto1-infografico, .texto2-infografico, .texto3-infografico, .texto4-infografico{
-    display: none;
+.text_ref{
+padding-top: 120px;
+padding-left: 162px;
+padding-right: 963px;
+padding-bottom: 20px;
+z-index: 3;
 }
+
+
+
+@media screen and (max-width: 450px){
+    .conteudo_infografico{
+        display: none;
+    }
+   .conteudo_mobile{
+    background:url(../img/infografico_mobile_linha.png) no-repeat;
+    background-position: left center;
+    background-size: 2.5%;
+   }
+   
+   .texto1_mobile, .texto2_mobile, .texto3_mobile, .texto4_mobile{
+    padding-left: 10%;
+   }
+   .texto4_mobile{
+    padding-bottom: 10%;
+   }
+   .img1-mobile, .img2-mobile, .img3-mobile, .img4-mobile
+   {
+   margin-left: -25px;
+   }
+
 .bloco1{
     padding-top: 15%;
     padding-bottom: 5%;
     }
 }
 
+@media screen and (min-width: 451px){
+    .conteudo_mobile{
+        display: none;
+    }
+}
+    
