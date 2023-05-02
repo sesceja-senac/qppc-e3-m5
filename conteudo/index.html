@@ -167,16 +167,16 @@
 
                         <div class="container painel-caracteristicas no-print my-5">
                             <div class="d-flex flex-wrap flex-lg-nowrap justify-content-evenly">
-                                <a class="btn" data-bs-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapse">
                                 <img src="../conteudo/img/painel1_bt1.png" class="img-fluid img-painel1">
                                 </a>
-                                <a class="btn" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse">
                                     <img src="../conteudo/img/painel1_bt2.png" class="img-fluid img-painel2">
                                 </a>
-                                <a class="btn painelbt3" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+                                <a class="btn painelbt3" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse">
                                 <img src="../conteudo/img/painel1_bt3.png" class="img-fluid img-painel3">
                                 </a>
-                                <a class="btn painelbt4" data-bs-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
+                                <a class="btn painelbt4" data-bs-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse">
                                     <img src="../conteudo/img/painel1_bt4.png" class="img-fluid img-painel4">
                                 </a>
                             </div>
@@ -398,7 +398,15 @@
     <script src="../assets/interativos/esquema_bru/esquema-bru.js"></script>
     <script src="../assets/js/geral.js"></script>
     <script src="../assets/js/aos.js"></script>
-    <script>AOS.init()</script>
+    <script>
+    
+        AOS.init()
+
+        $('.painel-caracteristicas a, .painel-estar-atualizado a').click(function(){
+            $('.painel-caracteristicas .collapse, .painel-estar-atualizado .collapse').removeClass('show');
+        })
+        
+    </script>
  <!-- Versao atual do handtalk -->
     <script>
         var scriptElem=document.createElement("script");
