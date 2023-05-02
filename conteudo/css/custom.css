@@ -112,23 +112,18 @@ padding-right: 287px;
 }
 
 .pg1{
-background:url('../img/teclado.png') right top, url('../img/bg.jpg');
-background-repeat: no-repeat, repeat;
+background: url('../img/notepad.png') left top no-repeat, url('../img/teclado.png') right top no-repeat, url('../img/martelocalculadora.png') right center no-repeat, url('../img/bg.jpg');
+background-size:25%, 25%, 20%, 100%;
 }
 
-.pg1 .bloco2
-{
-background: url('../img/notepad.png') left bottom no-repeat;
+.pg1 .bloco-recapitulando{
+background: url('../img/pinceis.png') left top no-repeat;
+background-size: 20%;
 }
 
-[data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
-    transition-timing-function: ease;
+.pg1 .blocopg1{
+background: url('../img/notepad.png') left
 }
-
-[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
-    transition-duration: .8s;
-}
-
 
 /*pg2*/
 .pg2{
