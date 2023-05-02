@@ -1,0 +1,179 @@
+body{
+    background: url('../img/bg.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.container-fluid{
+    background: url('../img/bg_2oplano.png') no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    z-index: 5;
+    position: absolute;
+}
+.elementos-atras{
+    z-index: 2;
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+}
+.elementos-atras img{
+    position: absolute;
+    margin: auto;
+}
+.elementos-frente{
+    z-index: 4;
+}
+.elementos-atras .fita{
+    animation-name: movFita;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.elementos-atras .caderno{
+    animation-delay: .3s;
+    animation-name: movCaderno;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.elementos-atras .martelo{
+    animation-delay: .6s;
+    animation-name: movMartelo;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.elementos-atras .celular{
+    animation-delay: .9s;
+    animation-name: movCelular;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.elementos-atras .capacete{
+    animation-delay: 1.2s;
+    animation-name: movCapacete;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.elementos-atras .laptop{
+    animation-delay: 1.5s;
+    animation-name: movLaptop;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.elementos-atras .tesoura{
+    animation-delay: 1.8s;
+    animation-name: movTesoura;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes movFita {
+    from   {
+        left: 40%;
+        top: 40%;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    to  {
+        left: 12%;
+        top: 45%;
+        height: 157px;
+        width: 270px;
+        opacity: 1;
+    }
+}
+@keyframes movCaderno {
+    from   {
+        left: 40%;
+        top: 40%;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    to  {
+        left: 15%;
+        top: 15%;
+        height: 237px;
+        width: 229px;
+        opacity: 1;
+    }
+}
+@keyframes movMartelo {
+    from   {
+        left: 40%;
+        top: 40%;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    to  {
+        left: 12%;
+        top: 0;
+        height: 245px;
+        width: 300px;
+        opacity: 1;
+    }
+}
+@keyframes movCelular {
+    from   {
+        left: 40%;
+        top: 40%;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    to  {
+        left: 30%;
+        top: -10%;
+        height: 229px;
+        width: 197px;
+        opacity: 1;
+    }
+}
+@keyframes movCapacete {
+    from   {
+        right: 40%;
+        top: 40%;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    to  {
+        right: 15%;
+        top: -15%;
+        height: 263px;
+        width: 260px;
+        opacity: 1;
+    }
+}
+@keyframes movLaptop {
+    from   {
+        right: 40%;
+        top: 40%;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    to  {
+        right: 10%;
+        top: 10%;
+        height: 283px;
+        width: 280px;
+        opacity: 1;
+    }
+}
+@keyframes movTesoura {
+    from   {
+        right: 40%;
+        top: 40%;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    to  {
+        right: 22%;
+        top: 40%;
+        height: 109px;
+        width: 140px;
+        opacity: 1;
+    }
+}
