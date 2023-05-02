@@ -368,7 +368,13 @@ body{
     clear: both;
     margin-bottom: 20px;
 }
-
+@media screen and (max-width: 1480px){
+    .elementos-atras, .elementos-frente{
+        transform: scale(0.8);
+        margin-top: -5%;
+    }
+    .btVideo{transform: scale(0.8);}
+}
 @media screen and (max-width: 1400px){
     .modal-dialog .modal-content{
         background-position: center;
@@ -376,6 +382,13 @@ body{
         max-width: 100%;
         padding: 50px;
         background: #007981;
+    }
+}
+@media screen and (max-width: 1080px){
+    .bt-titulo{width: 60%;}
+    .btVideo{
+        transform: scale(0.7);
+        margin-top: -10%;
     }
 }
 
