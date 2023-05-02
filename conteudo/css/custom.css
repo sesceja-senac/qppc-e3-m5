@@ -45,7 +45,7 @@ padding-left: 40px;
 padding-right: 40px;
 }
 
-.pg1, .pg2, .pg3{
+.pg1, .pg2, .pg3, .pg4{
 background:url(../img/bg.jpg);
 background-attachment: fixed;
 }
@@ -64,7 +64,6 @@ bottom: 0px;
 margin: auto;
 
 }
-
 
 .conteudo_postit{
 background: url(../img/destaque2_postit.png);
@@ -106,9 +105,9 @@ padding-left: 28px;
 padding-right: 287px;
 }
 .texto4-infografico{
-    padding-left: 265px;
-    padding-top: 90px;
-    padding-right: 158px;
+padding-left: 265px;
+padding-top: 90px;
+padding-right: 158px;
 }
 
 .pg1{
@@ -132,8 +131,8 @@ background-size: 25%, 20%, 20%, 20%, 100%;
 }
 
 .pg2 .blocopg-2{
-    background: url('../img/img3_esq.png') left top no-repeat;
-    background-size: 20%;
+background: url('../img/img3_esq.png') left top no-repeat;
+background-size: 20%;
 }
 .painelbt1:hover{
 background: url(../img/painel1_bt1_hover.png);
@@ -171,31 +170,12 @@ margin-right: 0px;
     background-repeat: no-repeat;
 }
 
+/*pg4*/
+
 .pg4{
-    background: url('../img/bg_ref.jpg');
-    background-repeat: no-repeat;
-    width: 1920px;
-    height:1080px;
-
+    background: url('../img/bg.jpg') center repeat;
+    height: 100%;
 }
-
-.bloco_ref{
-    background: url('../img/postit_ref.png');
-    background-repeat: no-repeat;
-    padding-top: 120px;
-    padding-left: 162px;
-    padding-right: 963px;
-    padding-bottom: 20px;
-}
-
-.text_ref{
-padding-top: 120px;
-padding-left: 162px;
-padding-right: 963px;
-padding-bottom: 20px;
-z-index: 3;
-}
-
 
 
 @media screen and (max-width: 450px){
