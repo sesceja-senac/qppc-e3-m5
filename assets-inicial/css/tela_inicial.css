@@ -393,5 +393,25 @@ body{
 }
 
 @media screen and (max-width: 780px){
+    body{
+        background: url('../img/capa_mob.png') no-repeat center;
+        background-size: cover;
+    }
 
+    .elementos-atras, .elementos-frente, .container-fluid, .texto-video{display: none;}
+
+    .div-btVideo{
+        bottom: unset;
+        top: 10px;
+        right: 0;
+        width: 110px;
+    }
+    .bt-titulo{
+        background: none;
+        height: 50vh;
+        width: 100%;
+    }
+    .bt-titulo:hover{
+        background: url('../img/titulo_ativo_mobile.png') no-repeat center;
+    }
 }
