@@ -132,7 +132,7 @@ background: url('../img/notepad.png') left bottom no-repeat;
 
 /*pg2*/
 .pg2{
-background:url(../img/bg.jpg);
+background:url('../img/') url(../img/bg.jpg);
 }
 
 .painelbt1:hover{
