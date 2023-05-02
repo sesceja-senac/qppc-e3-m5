@@ -390,8 +390,179 @@ body{
         transform: scale(0.7);
         margin-top: -10%;
     }
+    @keyframes movPinceis {
+        from   {
+            left: 40%;
+            top: 40%;
+            height: 0;
+            width: 0;
+            opacity: 0;
+        }
+        to  {
+            left: 28%;
+            top: 0;
+            height: auto;
+            width: auto;
+            opacity: 1;
+        }
+    }
+    @keyframes movCanetas2 {
+        from   {
+            left: 40%;
+            top: 40%;
+            height: 0;
+            width: 0;
+            opacity: 0;
+        }
+        to  {
+            left: 37%;
+            top: -5%;
+            height: auto;
+            width: auto;
+            opacity: 1;
+        }
+    }
+    @keyframes movCalculadora {
+        from   {
+            right: 40%;
+            top: 40%;
+            height: 0;
+            width: 0;
+            opacity: 0;
+        }
+        to  {
+            right: 40%;
+            top: 55%;
+            height: auto;
+            width: auto;
+            opacity: 1;
+        }
+    }
+    @keyframes movTrena {
+        from   {
+            right: 40%;
+            top: 40%;
+            height: 0;
+            width: 0;
+            opacity: 0;
+        }
+        to  {
+            right: 0;
+            top: 43%;
+            height: auto;
+            width: auto;
+            opacity: 1;
+        }
+    }
+
+    .div-btVideo{
+        bottom: unset;
+        top: 10px;
+        right: 0;
+        width: 110px;
+    }
+    .texto-video{display: none;}
+
+    @keyframes movFita {
+        from   {
+            left: 40%;
+            top: 40%;
+            height: 0;
+            width: 0;
+            opacity: 0;
+        }
+        to  {
+            left: 0;
+            top: 45%;
+            height: auto;
+            width: auto;
+            opacity: 1;
+        }
+    }
+    @keyframes movCaderno {
+        from   {
+            left: 40%;
+            top: 40%;
+            height: 0;
+            width: 0;
+            opacity: 0;
+        }
+        to  {
+            left: 0;
+            top: 15%;
+            height: auto;
+            width: auto;
+            opacity: 1;
+        }
+    }
+    @keyframes movMartelo {
+        from   {
+            left: 40%;
+            top: 40%;
+            height: 0;
+            width: 0;
+            opacity: 0;
+        }
+        to  {
+            left: 0;
+            top: 0;
+            height: auto;
+            width: auto;
+            opacity: 1;
+        }
+    }
+    @keyframes movLaptop {
+        from   {
+            right: 40%;
+            top: 10%;
+            height: 0;
+            width: 0;
+            opacity: 0;
+        }
+        to  {
+            right: -15%;
+            top: 0;
+            height: auto;
+            width: auto;
+            opacity: 1;
+        }
+    }
+    @keyframes movTesoura {
+        from   {
+            right: 40%;
+            top: 40%;
+            height: 0;
+            width: 0;
+            opacity: 0;
+        }
+        to  {
+            right: 0;
+            top: 40%;
+            height: auto;
+            width: auto;
+            opacity: 1;
+        }
+    }
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 580px){
+    body{
+        background: url('../img/capa_mob.png') no-repeat top center;
+        background-size: cover;
+        min-height: 900px;
+    }
 
+    .elementos-atras, .elementos-frente, .container-fluid{display: none;}
+    .bt-titulo{
+        background: none;
+        height: 400px;
+        width: 100%;
+    }
+    .bt-titulo:hover{
+        background: url('../img/titulo_ativo_mobile.png') no-repeat center;
+        background-size: contain;
+    }
+}
+@media screen and (max-width: 380px){
+    body{min-height: 800px;}
 }
