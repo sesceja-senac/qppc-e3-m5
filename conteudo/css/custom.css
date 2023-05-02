@@ -23,6 +23,7 @@ h3, h4, h5{
     color: #000;
     margin: 1em auto;
 }
+#booklet{position: relative;}
 
 /*paginação*/
 footer li.active a {
@@ -54,12 +55,13 @@ padding-bottom: 5%;
 }
 
 footer.container{
-position: relative;
+position: absolute;
 left: 0px;
 right: 0px;
 z-index: 2;
 bottom: 0px;
 margin: auto;
+background: #fff;
 
 }
 
