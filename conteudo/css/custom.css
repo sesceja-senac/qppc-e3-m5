@@ -130,6 +130,34 @@ background: url('../img/notepad.png') left bottom no-repeat;
 background:url(../img/bg.jpg);
 }
 
+.painelbt1:hover{
+background: url(../img/painel1_bt1_hover.png);
+background-repeat: no-repeat;
+z-index: 4;
+}
+
+.pg2.img-painel1, .img-painel2, .img-painel3, .img-painel4{
+position: relative;
+z-index: 3;
+}
+
+.pg2 .container .painel-caracteristicas{
+padding-right: 0px;
+padding-left: 0px;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+.btn{
+    padding: 0em;
+}
+.card{
+    background-color:#00838D;
+}
+
+.text-card{
+    color: #fff;
+}
 
 /*pg3*/
 .pg3
@@ -167,23 +195,37 @@ z-index: 3;
 }
 
 
-@media screen and(min-width: 440px){
-    .conteudo_infografico_mobile{
+
+@media screen and (max-width: 450px){
+    .conteudo_infografico{
         display: none;
     }
-}
-    
+   .conteudo_mobile{
+    background:url(../img/infografico_mobile_linha.png) no-repeat;
+    background-position: left center;
+    background-size: 2.5%;
+   }
+   
+   .texto1_mobile, .texto2_mobile, .texto3_mobile, .texto4_mobile{
+    padding-left: 10%;
+   }
+   .texto4_mobile{
+    padding-bottom: 10%;
+   }
+   .img1-mobile, .img2-mobile, .img3-mobile, .img4-mobile
+   {
+   margin-left: -25px;
+   }
 
-@media screen and (max-width: 430px){
-    .conteudo_infografico_mobile{
-      
-    }
-.texto1-infografico, .texto2-infografico, .texto3-infografico, .texto4-infografico{
-    display: none;
-}
 .bloco1{
     padding-top: 15%;
     padding-bottom: 5%;
     }
 }
 
+@media screen and (min-width: 451px){
+    .conteudo_mobile{
+        display: none;
+    }
+}
+    
