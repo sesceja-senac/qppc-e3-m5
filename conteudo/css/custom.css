@@ -132,9 +132,14 @@ background: url('../img/notepad.png') left bottom no-repeat;
 
 /*pg2*/
 .pg2{
-background:url('../img/') url(../img/bg.jpg);
+background:url('../img/img_esqpg2.png') left top no-repeat, url('../img/img_dirpg2.png') right top no-repeat, url('../img/img2_dir.png') right center no-repeat, url('../img/img4_dir.png') right bottom no-repeat, url('../img/bg.jpg');
+background-size: 25%, 20%, 20%, 20%, 100%;
 }
 
+.pg2 .blocopg-2{
+    background: url('../img/img3_esq.png') left top no-repeat;
+    background-size: 20%;
+}
 .painelbt1:hover{
 background: url(../img/painel1_bt1_hover.png);
 background-repeat: no-repeat;
@@ -223,10 +228,22 @@ z-index: 3;
     padding-top: 15%;
     padding-bottom: 5%;
     }
+.painel-caracteristicas{
+    display: none;
+}
+.painel-estar-atualizado{
+    display: none;
+}
 }
 
 @media screen and (min-width: 451px){
     .conteudo_mobile{
+        display: none;
+    }
+    .painel-caracteristicas-mobile{
+        display: none;
+    }
+    .estar-atualizado-mobile{
         display: none;
     }
 }
