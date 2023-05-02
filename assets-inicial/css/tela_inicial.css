@@ -2,6 +2,7 @@ body{
     background: url('../img/bg.jpg') no-repeat center;
     background-size: cover;
     min-height: 100vh;
+    position: relative;
 }
 .container-fluid{
     background: url('../img/bg_2oplano.png') no-repeat center;
@@ -16,53 +17,38 @@ body{
     min-height: 100vh;
     position: absolute;
 }
-.elementos-atras img{
+.elementos-atras img, .elementos-frente img{
     position: absolute;
     margin: auto;
-}
-.elementos-frente{
-    z-index: 4;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 .elementos-atras .fita{
     animation-name: movFita;
-    animation-duration: 1s;
-    animation-fill-mode: both;
 }
 .elementos-atras .caderno{
     animation-delay: .3s;
     animation-name: movCaderno;
-    animation-duration: 1s;
-    animation-fill-mode: both;
 }
 .elementos-atras .martelo{
     animation-delay: .6s;
     animation-name: movMartelo;
-    animation-duration: 1s;
-    animation-fill-mode: both;
 }
 .elementos-atras .celular{
     animation-delay: .9s;
     animation-name: movCelular;
-    animation-duration: 1s;
-    animation-fill-mode: both;
 }
 .elementos-atras .capacete{
     animation-delay: 1.2s;
     animation-name: movCapacete;
-    animation-duration: 1s;
-    animation-fill-mode: both;
 }
 .elementos-atras .laptop{
     animation-delay: 1.5s;
     animation-name: movLaptop;
-    animation-duration: 1s;
-    animation-fill-mode: both;
 }
 .elementos-atras .tesoura{
     animation-delay: 1.8s;
     animation-name: movTesoura;
-    animation-duration: 1s;
-    animation-fill-mode: both;
 }
 
 @keyframes movFita {
@@ -76,8 +62,8 @@ body{
     to  {
         left: 12%;
         top: 45%;
-        height: 157px;
-        width: 270px;
+        height: auto;
+        width: auto;
         opacity: 1;
     }
 }
@@ -92,8 +78,8 @@ body{
     to  {
         left: 15%;
         top: 15%;
-        height: 237px;
-        width: 229px;
+        height: auto;
+        width: auto;
         opacity: 1;
     }
 }
@@ -108,8 +94,8 @@ body{
     to  {
         left: 12%;
         top: 0;
-        height: 245px;
-        width: 300px;
+        height: auto;
+        width: auto;
         opacity: 1;
     }
 }
@@ -124,8 +110,8 @@ body{
     to  {
         left: 30%;
         top: -10%;
-        height: 229px;
-        width: 197px;
+        height: auto;
+        width: auto;
         opacity: 1;
     }
 }
@@ -140,8 +126,8 @@ body{
     to  {
         right: 15%;
         top: -15%;
-        height: 263px;
-        width: 260px;
+        height: auto;
+        width: auto;
         opacity: 1;
     }
 }
@@ -156,8 +142,8 @@ body{
     to  {
         right: 10%;
         top: 10%;
-        height: 283px;
-        width: 280px;
+        height: auto;
+        width: auto;
         opacity: 1;
     }
 }
@@ -172,8 +158,227 @@ body{
     to  {
         right: 22%;
         top: 40%;
-        height: 109px;
-        width: 140px;
+        height: auto;
+        width: auto;
         opacity: 1;
     }
+}
+.elementos-frente{
+    z-index: 6;
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+}
+.elementos-frente .pinceis{
+    animation-delay: 2.1s;
+    animation-name: movPinceis;
+}
+.elementos-frente .canetas2{
+    animation-delay: 2.4s;
+    animation-name: movCanetas2;
+}
+.elementos-frente .cafe{
+    animation-delay: 2.7s;
+    animation-name: movCafe;
+}
+.elementos-frente .parafusadeira{
+    animation-delay: 3s;
+    animation-name: movParafusadeira;
+}
+.elementos-frente .canetas{
+    animation-delay: 3.3s;
+    animation-name: movCanetas;
+}
+.elementos-frente .calculadora{
+    animation-delay: 3.6s;
+    animation-name: movCalculadora;
+}
+.elementos-frente .trena{
+    animation-delay: 3.9s;
+    animation-name: movTrena;
+}
+
+@keyframes movPinceis {
+    from   {
+        left: 40%;
+        top: 40%;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    to  {
+        left: 28%;
+        top: 10%;
+        height: auto;
+        width: auto;
+        opacity: 1;
+    }
+}
+@keyframes movCanetas2 {
+    from   {
+        left: 40%;
+        top: 40%;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    to  {
+        left: 37%;
+        top: 0%;
+        height: auto;
+        width: auto;
+        opacity: 1;
+    }
+}
+@keyframes movCafe {
+    from   {
+        left: 40%;
+        top: 40%;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    to  {
+        left: 42%;
+        top: 16%;
+        height: auto;
+        width: auto;
+        opacity: 1;
+    }
+}
+@keyframes movParafusadeira {
+    from   {
+        left: 40%;
+        top: 40%;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    to  {
+        left: 42%;
+        top: -17%;
+        height: auto;
+        width: auto;
+        opacity: 1;
+    }
+}
+@keyframes movCanetas {
+    from   {
+        right: 40%;
+        top: 40%;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    to  {
+        right: 25%;
+        top: -10%;
+        height: auto;
+        width: auto;
+        opacity: 1;
+    }
+}
+@keyframes movCalculadora {
+    from   {
+        right: 40%;
+        top: 40%;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    to  {
+        right: 44%;
+        top: 43%;
+        height: auto;
+        width: auto;
+        opacity: 1;
+    }
+}
+@keyframes movTrena {
+    from   {
+        right: 40%;
+        top: 40%;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    to  {
+        right: 10%;
+        top: 43%;
+        height: auto;
+        width: auto;
+        opacity: 1;
+    }
+}
+
+.bt-titulo{
+    background: url('../img/titulo.png') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    height: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+}
+.bt-titulo:hover{
+    background: url('../img/titulo_ativo.png') no-repeat center, url('../img/titulo.png') no-repeat center;
+    background-size: contain;
+}
+.div-btVideo{
+    width: 280px;
+    bottom: 1%;
+    right: 1%;
+    position: absolute;
+    z-index: 15;
+    cursor: pointer;
+}
+.texto-video{
+    color: #000;
+    font-size: 20px;
+    line-height: 22px;
+    text-shadow: #fff 3px 2px 0px;
+    font-weight: bold;
+}
+.btVideo{
+    background: url('../img/bt-video.png') no-repeat;
+    width: 128px;
+    height: 127px;
+    border: none;
+    background-size: contain;
+    display: block;
+    margin: 10px auto;
+    transition: all 0.2s;
+}
+.btVideo:hover {
+    transform: scale(1.1);
+}
+.modal-dialog .modal-content{
+    background: url('../img/Video-apresentacao-gd.png') no-repeat center;
+    width: 1133px;
+    height: 708px;
+    border: none;
+    padding: 100px 200px;
+}
+.modal-dialog .modal-content p,
+.btn-close{
+    color: #fff;
+    clear: both;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1400px){
+    .modal-dialog .modal-content{
+        background-position: center;
+        width: unset;
+        max-width: 100%;
+        padding: 50px;
+        background: #007981;
+    }
+}
+
+@media screen and (max-width: 780px){
+
 }

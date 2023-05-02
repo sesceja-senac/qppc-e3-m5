@@ -19,7 +19,8 @@
         <div class="anim"></div>
         <h1>Aguarde enquanto o conteúdo é carregado.</h1>
     </div>
-    <div class="elementos-atras">
+    
+    <div class="elementos-atras" aria-hidden="true">
         <img src="assets-inicial/img/fita.png" class="fita">
         <img src="assets-inicial/img/martelo.png" class="martelo">
         <img src="assets-inicial/img/caderno.png" class="caderno">
@@ -29,22 +30,51 @@
         <img src="assets-inicial/img/tesoura.png" class="tesoura">
     </div>
     <div class="container-fluid">
-        <h2 class="visually-hidden">Mundo do trabalho da produção cultural</h2>
         <div class="visually-hidden">
             <!--aqui vai texto do vídeo introdutório-->
         </div>
     </div>
-    <div class="elementos-frente">
-        
+    <div class="elementos-frente" aria-hidden="true">
+        <img src="assets-inicial/img/pinceis.png" class="pinceis">
+        <img src="assets-inicial/img/canetas.png" class="canetas">
+        <img src="assets-inicial/img/parafusadeira.png" class="parafusadeira">
+        <img src="assets-inicial/img/cafe.png" class="cafe">
+        <img src="assets-inicial/img/canetas2.png" class="canetas2">
+        <img src="assets-inicial/img/calculadora.png" class="calculadora">
+        <img src="assets-inicial/img/trena.png" class="trena">
     </div>
-
+    <a href="conteudo/index.html" class="bt-titulo"><span class="visually-hidden">Mundo do trabalho da produção cultural</span></a>
+    <div class="div-btVideo">
+        <p class="texto-video">Assista novamente ao vídeo introdutório deste módulo.</p>
+        <button type="button" class="btVideo" data-bs-toggle="modal" data-bs-target="#modal-video" aria-hidden="true"></button>
+    </div>
+    
+    <div class="modal fade" id="modal-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <p>Olá! Antes de começar, assista ao vídeo introdutório sobre o módulo a seguir:</p>
+                    <iframe src="https://www.youtube.com/embed/" class="ratio ratio-4x3" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
     <!--Jquery-->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets-inicial/js/tela_inicial.js"></script>
-
+    <script>
+        $( window ).on( "load", function() {
+            setTimeout(function() { 
+                $('#modal-video').modal('show');
+            }, 4000);
+        });
+     </script>
     <script>
         var scriptElem=document.createElement("script");
         scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
