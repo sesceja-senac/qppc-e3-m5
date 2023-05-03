@@ -100,10 +100,10 @@ font-weight: 700;
 
     @page {
         size: A4;
-        margin-top: 3cm;
-        margin-bottom: 2cm;
-        margin-right: 2cm;
-        margin-left: 3cm;
+        margin-top: 1cm;
+        margin-bottom: 1cm;
+        margin-right: 1cm;
+        margin-left: 2cm;
       }
 
       html, body {
@@ -178,7 +178,7 @@ h6, h6.visually-hidden{
   font-family: 'Libre Franklin Regular' !important
 }
 h1,h2,h3,h4,h5,h6{
-    margin: 1.2rem 0;
+    margin: 1rem 0;
     font-family: 'Libre Franklin Bold';
     color: black;
 }
@@ -253,11 +253,11 @@ p{
   }
   .tab-content .tab-pane{
       display: block;
-      padding: 1.6rem;
+      padding: 1rem;
       border: 2px solid;
       page-break-inside: avoid;
       line-height: 1.2;
-      margin: 1.2rem 0;
+      margin: 1rem 0;
       width: 100%;
   }
 /*accordion*/
@@ -281,7 +281,7 @@ p{
   }
   .carousel .carousel-inner .carousel-item{
       display: block;
-      margin: 1.2rem;
+      margin: 1rem;
   }
   .carousel .carousel-indicators,
   .carousel .carousel-control-prev,
@@ -331,7 +331,7 @@ p{
       transition: none;
       width: auto;
       margin: 0;
-      margin-top: 5rem;
+      margin-top: 2rem;
       margin-bottom: 0rem;
   }
   .modal-dialog .modal-header .btn-close{
@@ -387,6 +387,6 @@ p{
   background-color: white !important;
 
 }
-
+.pagina, .container{padding: 0 !important;}
 
 }
