@@ -563,8 +563,16 @@ body{
         }
     }
 }
-
+@media screen and (max-width: 780px){
+    .bg-podcast{
+        background-position-y: 105px;
+        background-color: #007981;
+    }
+}
 @media screen and (max-width: 580px){
+    .bg-podcast{
+        background-position-y: 105px;
+    }
     body{
         background: url('../img/capa_mob.png') no-repeat top center;
         background-size: cover;

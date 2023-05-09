@@ -253,8 +253,13 @@ margin-right: 0px;
     height: 100%;
 }
 
-
 @media screen and (max-width: 730px){
+    
+    .bg-podcast{
+        background-position-y: 110px;
+        background-color: #007981;
+        border-radius: 10px;
+    }
     .conteudo_infografico{
         background-image: url('../img/infografico_mobile_linha.png');
         background-size: 7px;
