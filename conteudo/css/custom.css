@@ -5,10 +5,10 @@
 .content.words.splitting.hero__content.content--hero.hero__content--show-text.hero__content--hidden{
     opacity: 0;
 }
-.panelcarac1{ background-image: url('../img/painel1_bt1.png');}
-.panelcarac2{ background-image: url('../img/painel1_bt2.png');}
-.panelcarac3{ background-image: url('../img/painel1_bt3.png');}
-.panelcarac4{ background-image: url('../img/painel1_bt4.png');}
+.panelcarac1{ background-image: url('../img/painel1_bt1.png');background-size: cover; }
+.panelcarac2{ background-image: url('../img/painel1_bt2.png');background-size: cover; }
+.panelcarac3{ background-image: url('../img/painel1_bt3.png');background-size: cover; }
+.panelcarac4{ background-image: url('../img/painel1_bt4.png');background-size: cover; }
 
 .panelcarac1 img{opacity: 0;}
 .panelcarac2 img{opacity: 0;}
