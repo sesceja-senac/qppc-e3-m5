@@ -2,7 +2,59 @@
     font-family: 'PermanentMarker';
     src: url('../fonts/PermanentMarker.ttf');
 }
+.content.words.splitting.hero__content.content--hero.hero__content--show-text.hero__content--hidden{
+    opacity: 0;
+}
+.panelcarac1{ background-image: url('../img/painel1_bt1.png');}
+.panelcarac2{ background-image: url('../img/painel1_bt2.png');}
+.panelcarac3{ background-image: url('../img/painel1_bt3.png');}
+.panelcarac4{ background-image: url('../img/painel1_bt4.png');}
 
+.panelcarac1 img{opacity: 0;}
+.panelcarac2 img{opacity: 0;}
+.panelcarac3 img{opacity: 0;}
+.panelcarac4 img{opacity: 0;}
+
+.panelcarac1:hover{ background-image: url('../img/painel1_bt1_hover.png');}
+.panelcarac2:hover{ background-image: url('../img/painel1_bt2_hover.png');}
+.panelcarac3:hover{ background-image: url('../img/painel1_bt3_hover.png');}
+.panelcarac4:hover{ background-image: url('../img/painel1_bt4_hover.png');}
+
+.panelround1{ background-image: url('../img/painel2_bt1.png'); background-size: 100%; background-repeat: no-repeat;}
+.panelround2{ background-image: url('../img/painel2_bt2.png'); background-size: 100%; background-repeat: no-repeat;}
+.panelround3{ background-image: url('../img/painel2_bt3.png'); background-size: 100%; background-repeat: no-repeat;}
+.panelround4{ background-image: url('../img/painel2_bt4.png'); background-size: 100%; background-repeat: no-repeat;}
+.panelround5{ background-image: url('../img/painel2_bt5.png'); background-size: 100%; background-repeat: no-repeat;}
+.panelround6{ background-image: url('../img/painel2_bt6.png'); background-size: 100%; background-repeat: no-repeat;}
+.panelround7{ background-image: url('../img/painel2_bt7.png'); background-size: 100%; background-repeat: no-repeat;}
+
+
+.panelround1:hover{ background-image: url('../img/painel2_bt1_hover.png');}
+.panelround2:hover{ background-image: url('../img/painel2_bt2_hover.png');}
+.panelround3:hover{ background-image: url('../img/painel2_bt3_hover.png');}
+.panelround4:hover{ background-image: url('../img/painel2_bt4_hover.png');}
+.panelround5:hover{ background-image: url('../img/painel2_bt5_hover.png');}
+.panelround6:hover{ background-image: url('../img/painel2_bt6_hover.png');}
+.panelround7:hover{ background-image: url('../img/painel2_bt7_hover.png');}
+
+.pagina.pg4 .container.bloco1{ padding-bottom: 300px !important;}
+.pagina.pg4{ padding-bottom: 100px !important;background-size: cover;}
+
+
+/* .content.words.splitting.hero__content.content--hero.hero__content--top.hero__content--show-text{
+    opacity: 0.3;
+} */
+/* .content.words.splitting hero__content.content--hero.hero__content--show-text.hero__content--bottom{ opacity: 1;}
+.content.words.splitting.hero__content.content--hero.hero__content--top{
+    opacity: 0.75;
+    background-color: hsla(0, 0%, 0%, 0.535);
+}
+
+.opacidadeImg1{ opacity: 1; }
+img.content__image.opacidadeImg{
+    opacity: 0.75;
+} */
+.content__text .opacidadeImg1{}
 .titulo-conteudo {
 position: absolute;
 width: 100%;
@@ -95,12 +147,12 @@ position: relative;
 }
 .texto2-infografico{
 padding-left: 400px;
-padding-top: 74px;
+padding-top: 100px;
 padding-right: 30px;
 }
 
 .texto3-infografico{
-padding-top: 80px;
+padding-top: 70px;
 padding-left: 28px;
 padding-right: 287px;
 }
@@ -178,6 +230,34 @@ margin-right: 0px;
 }
 
 
+@media screen and (max-width: 730px){
+    .conteudo_infografico{
+        background-image: url('../img/infografico_mobile_linha.png');
+        background-size: 7px;
+        background-position: left;
+        height: auto;
+    }
+    .texto1-infografico{
+        padding: 0;
+        padding-left: 20px;
+
+    }
+    .texto2-infografico{
+        padding: 0;
+        padding-left: 20px;
+        
+    }
+    .texto3-infografico{
+        padding: 0;
+        padding-left: 20px;
+        
+    }
+    .texto4-infografico{
+        padding: 0;
+        padding-left: 20px;
+        
+    }
+}
 @media screen and (max-width: 450px){
     .conteudo_infografico{
         display: none;
@@ -199,16 +279,16 @@ margin-right: 0px;
    margin-left: -25px;
    }
 
-.bloco1{
-    padding-top: 15%;
-    padding-bottom: 5%;
+    .bloco1{
+        padding-top: 15%;
+        padding-bottom: 5%;
+        }
+    .painel-caracteristicas{
+        display: none;
     }
-.painel-caracteristicas{
-    display: none;
-}
-.painel-estar-atualizado{
-    display: none;
-}
+    .painel-estar-atualizado{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 451px){

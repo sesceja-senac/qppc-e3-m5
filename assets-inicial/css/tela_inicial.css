@@ -323,13 +323,27 @@ body{
     margin: auto;
     z-index: 10;
 }
+.bt-titulo::before{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: '';
+    width: 295px;
+    height: 89px;
+    background-image: url('../img/bt_iniciar.png');
+}
+.bt-titulo:hover::before{
+    background-image: url('../img/bt_iniciar_hv.png');
+}
 .bt-titulo:hover{
     background: url('../img/titulo_ativo.png') no-repeat center, url('../img/titulo.png') no-repeat center;
     background-size: contain;
 }
 .div-btVideo{
     width: 280px;
-    bottom: 1%;
+    top: 1%;
     right: 1%;
     position: absolute;
     z-index: 15;
@@ -368,6 +382,7 @@ body{
     clear: both;
     margin-bottom: 20px;
 }
+
 @media screen and (max-width: 1480px){
     .elementos-atras, .elementos-frente{
         transform: scale(0.8);

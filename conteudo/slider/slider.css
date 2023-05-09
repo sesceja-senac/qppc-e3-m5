@@ -1,3 +1,51 @@
+/* pulse effect */
+.pulsingButton {
+  width: 220px;
+  text-align: center;
+  white-space: nowrap;
+  display: block;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #FF0000;
+  box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
+  -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  transition: all 300ms ease-in-out;
+}
+
+
+/* Comment-out to have the button continue to pulse on mouseover */
+
+
+/* Animation */
+
+@-webkit-keyframes pulsing {
+  to {
+    box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+  }
+}
+
+@-moz-keyframes pulsing {
+  to {
+    box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+  }
+}
+
+@-ms-keyframes pulsing {
+  to {
+    box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+  }
+}
+
+@keyframes pulsing {
+  to {
+    box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+  }
+}
+/* fim pulse effect */
 .hero {
   --border-radius: 12px;
   --transition-duration: 1000ms;
@@ -119,7 +167,7 @@
   width: 70%;
   aspect-ratio: 2.5 / 1;
   right: 0px;
-  bottom: 50px;
+  bottom: 30%;
   padding: 15px 0;
   z-index: 1;
   user-select: none;
@@ -222,30 +270,82 @@
   right: auto !important;
   left: calc((100% - 25px * 2) / 3.5);
   top: calc(50% - 20px) !important;
-  width: 40px;
-  height: 40px;
-  background-color: #fffb;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   color: forestgreen;
+  transition: all 0.3;
+  
+  box-shadow: 0 0 0 0 rgba(40, 175, 135, 0.7);
+  -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  transition: all 300ms ease-in-out;
+
+}
+.swiper-button-next:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+  
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  animation: none;
 }
 
 .hero__fullsize .hero__content--top:first-child::before{
   background: url('img/slide1_postit.png') no-repeat left center;
+  background-color: #00000078;
 }
 .hero__fullsize .hero__content--top:nth-child(2)::before{
   background: url('img/slide2_postit.png') no-repeat left center;
+  background-color: #00000078;
 }
 .hero__fullsize .hero__content--top:nth-child(3)::before{
   background: url('img/slide3_postit_destaque.png') no-repeat left center;
+  background-color: #00000078;
 }
 .hero__fullsize .hero__content--top:nth-child(4)::before{
   background: url('img/slide4_postit.png') no-repeat left center;
+  background-color: #00000078;
 }
-
+.hero__fullsize .hero__content--top{
+  background-color: #00000078;
+}
+/* .pagina.pg1 + .paginacao{
+  margin-top: 100px;
+} */
 @media screen and (max-width: 1080px){
+  
+  .hero__swiper { bottom: 0;}
   .hero{min-height: 800px;}
-  .hero__fullsize .hero__content--top:nth-child(1)::before{background-size: 60%;}
+  /* .hero__fullsize .hero__content--top:nth-child(1)::before{background-size: 60%;}
   .hero__fullsize .hero__content--top:nth-child(2)::before{background-size: 50%;}
   .hero__fullsize .hero__content--top:nth-child(3)::before{background-size: 50%;}
-  .hero__fullsize .hero__content--top:nth-child(4)::before{background-size: 50%;}
+  .hero__fullsize .hero__content--top:nth-child(4)::before{background-size: 50%;} */
+  .swiper-wrapper{
+    margin-left: 150px;
+  }
+}
+@media screen and (max-width: 1000px){
+  .hero__fullsize .hero__content--top:first-child::before {
+   background-position: left top;
+  }
+  .hero__swiper { bottom: 100px;}
+
+  /* .pagina.pg1 + .paginacao > .pagination{
+    margin-bottom: -115px !important;
+  }
+  .pagina.pg1 + .paginacao {
+    margin-bottom: -115px !important;
+  } */
+}
+@media screen and (max-width: 600px){
+  
+  .hero__fullsize .hero__content--top:nth-child(1)::before{background-size: 90%;}
+  .hero__fullsize .hero__content--top:nth-child(2)::before{background-size: 90%;}
+  .hero__fullsize .hero__content--top:nth-child(3)::before{background-size: 90%;}
+  .hero__fullsize .hero__content--top:nth-child(4)::before{background-size: 90%;}
 }
