@@ -40,6 +40,9 @@
 .pagina.pg4 .container.bloco1{ padding-bottom: 300px !important;}
 .pagina.pg4{ padding-bottom: 100px !important;background-size: cover;}
 
+.painel-estar-atualizado img{
+    opacity: 0;
+}
 
 /* .content.words.splitting.hero__content.content--hero.hero__content--top.hero__content--show-text{
     opacity: 0.3;

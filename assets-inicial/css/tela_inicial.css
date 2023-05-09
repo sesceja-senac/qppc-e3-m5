@@ -3,6 +3,7 @@ body{
     background-size: cover;
     min-height: 100vh;
     position: relative;
+    padding-top: 150px;
 }
 .container-fluid{
     background: url('../img/bg_2oplano.png') no-repeat center;
@@ -384,6 +385,9 @@ body{
 }
 
 @media screen and (max-width: 1480px){
+    body{
+        padding-top: 50px;
+    }
     .elementos-atras, .elementos-frente{
         transform: scale(0.8);
         margin-top: -5%;
