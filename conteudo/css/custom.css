@@ -50,16 +50,17 @@
     max-width: 811px;
     height: 268px;
     background-size: contain;
+    margin-bottom: 30px;
 }
 
 .ytb-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    margin-bottom: 50px;
 }
 .ytb {
-    width: 360px;
+    width: 252px;
     height: 220px;
     margin: 15px;
 }
