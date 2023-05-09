@@ -44,6 +44,26 @@
     opacity: 0;
 }
 
+
+.bg-podcast{
+    background: url('../img/podcast.png') no-repeat;
+    max-width: 811px;
+    height: 268px;
+    background-size: contain;
+}
+
+.ytb-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ytb {
+    width: 360px;
+    height: 220px;
+    margin: 15px;
+}
+
 /* .content.words.splitting.hero__content.content--hero.hero__content--top.hero__content--show-text{
     opacity: 0.3;
 } */
