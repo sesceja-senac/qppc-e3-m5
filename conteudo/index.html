@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="slider/slider.css">
     
     <link rel="stylesheet" href="../conteudo/css/custom.css">
+    <link rel="stylesheet" href="objeto/curriculo/css/estilos-curriculo.css">
    
 
   </head>
@@ -644,113 +645,7 @@
                         <br><br>
                     </div> 
                     <div class="container" style="background: none;">
-                        <style>
-                            #pagina-curriculo {
-                                margin: auto;
-                                display: block;
-                                background: url(objeto/curriculo/paper.jpg) top left / cover no-repeat white;
-                                border: 1px solid #ccc;
-                                max-width: 750px;
-                                box-shadow: 5px 5px 5px #000000b6;
-                                margin-bottom: 200px;
-                                
-                                overflow: hidden;
-                            }
-                            #bto-foto {
-                                border: 2px solid #333;
-                                color: rgba(0,0,0,0);
-                                background: url(objeto/curriculo/foto-vazia.jpg) top left / 100% auto no-repeat;
-                                max-width: 300px;
-                                height: auto;
-                                overflow: hidden;
-                                width: 100%;
-                                margin: auto;
-                                display: block;
-                                padding: 10px 20px;
-                                font-size: 16px;
-                                }
-
-                            #bto-foto span {
-                                transition: .35s;
-                                padding: 10px 20px;
-                                top: 0px;
-                                left: 0px;
-                                bottom: 0px;
-                                right: 0px;
-                                margin: auto;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                font-weight: bold;
-                                text-transform: uppercase;
-                            }
-                            #bto-foto:hover span {
-                                color: #333;
-                                background-color: rgba(255, 255, 255, 0.603);
-                               
-                                transition: .35s;
-                            }
-                   
-                            .btos-curriculo:hover{
-                                background-color: #f2f2f2
-                            }
-                            #bto-foto::before {
-                                content: "";
-                                width: 100%;
-                                height: auto;
-                                display: block;
-                                padding-top: 138%;
-                            }
-                            .btos-curriculo {
-                            border: 2px dashed #c1c1c1;
-                            background-color: white;
-                            padding: 10px 20px;
-                            width: 100%;
-                            font-size: 16px;
-                            }
-                            .duvida {
-                            border-radius: 10px;
-                            border: 0px none;
-                            width: 48px;
-                            height: 48px;
-                            font-size: 26px;
-                            background-color: #ff9700;
-                            color: #fff;
-                            margin-bottom: 10px;
-                            }
-                            .duvida:hover{
-                                opacity: 0.5;
-
-                            }
-
-                            #pagina-curriculo *:not(i) {
-                                font-family: var(--bs-body-font-family)
-                            }
-                            #pagina-curriculo h4 {
-                                margin-top: 0px;
-                            }
-
-                            #pagina-curriculo h3 {
-                                font-weight: bold;
-                                font-size: 20px;
-                            }
-                            .bto-baixar-modelo {
-                            background-color: #ff9700;
-                            padding: 10px 20px;
-                            border-radius: 20px;
-                            color: white;
-                            font-weight: bold;
-                            text-decoration: none;
-                            margin: auto;
-                            display: block;
-                            text-align: center;
-                            max-width: 350px;
-                            }
-                            .bto-baixar-modelo:hover {
-                                opacity: 0.5;
-                                color: white;
-                            }
-                        </style>
+                      
                         <div class="container-fluid p-5 container-fluid p-5 mb-5 mt-5" id="pagina-curriculo">
                             <div class="row">
                                 <div class="col-12 order-2 order-md-1 col-md-8">
@@ -920,7 +815,7 @@
     <script src="../assets/js/geral.js"></script>
     <script src="../assets/js/aos.js"></script>
     <script type="module" src="slider/slide.js"></script>
-    <script src="objeto/curriculo/curriculo.js"></script>
+    <script src="objeto/curriculo/js/curriculo.js"></script>
     <script>
     
         AOS.init()
