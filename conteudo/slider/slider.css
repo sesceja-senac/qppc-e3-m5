@@ -304,13 +304,13 @@
   background-color: #00000078;
 }
 .hero__fullsize .hero__content--top:nth-child(3)::before{
-  background: url('img/slide3_postit_destaque.png') no-repeat left center;
+  background: url('img/slide3_postit_destaque1.png') no-repeat left center;
   background-color: #00000078;
 }
-.hero__fullsize .hero__content--top:nth-child(4)::before{
+/* .hero__fullsize .hero__content--top:nth-child(4)::before{
   background: url('img/slide4_postit.png') no-repeat left center;
   background-color: #00000078;
-}
+} */
 .hero__fullsize .hero__content--top{
   background-color: #00000078;
 }

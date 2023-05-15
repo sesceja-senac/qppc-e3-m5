@@ -2,6 +2,20 @@
     font-family: 'PermanentMarker';
     src: url('../fonts/PermanentMarker.ttf');
 }
+
+
+
+
+.destaque_curriculo
+{ background-image: url('../img/destaque_curriculo.png');background-size: cover;width: 1003px;height: 289px;}
+.destaque_curriculo1
+{ background-image: url('../img/mob_destaque_curriculo.png');background-size: cover;width: 317px;height: 528px;}
+
+.estagio
+{ background-image: url('../img/postit_destaque_pos_slide3.png');background-size: cover;width: 1000px;height: 217px;}
+.mundo
+{ background-image: url('../img/img_mundotrabalho.png');background-size: cover;width: 962px;height: 541px;}
+
 .content.words.splitting.hero__content.content--hero.hero__content--show-text.hero__content--hidden{
     opacity: 0;
 }
@@ -20,22 +34,22 @@
 .panelcarac3:hover{ background-image: url('../img/painel1_bt3_hover.png');}
 .panelcarac4:hover{ background-image: url('../img/painel1_bt4_hover.png');}
 
-.panelround1{ background-image: url('../img/painel2_bt1.png'); background-size: 100%; background-repeat: no-repeat;}
-.panelround2{ background-image: url('../img/painel2_bt2.png'); background-size: 100%; background-repeat: no-repeat;}
-.panelround3{ background-image: url('../img/painel2_bt3.png'); background-size: 100%; background-repeat: no-repeat;}
-.panelround4{ background-image: url('../img/painel2_bt4.png'); background-size: 100%; background-repeat: no-repeat;}
-.panelround5{ background-image: url('../img/painel2_bt5.png'); background-size: 100%; background-repeat: no-repeat;}
-.panelround6{ background-image: url('../img/painel2_bt6.png'); background-size: 100%; background-repeat: no-repeat;}
-.panelround7{ background-image: url('../img/painel2_bt7.png'); background-size: 100%; background-repeat: no-repeat;}
+.panelround1{ background-image: url('../img/painel2_bt1_hover.png'); background-size: 100%; background-repeat: no-repeat;}
+.panelround2{ background-image: url('../img/painel2_bt2_hover.png'); background-size: 100%; background-repeat: no-repeat;}
+.panelround3{ background-image: url('../img/painel2_bt3_hover.png'); background-size: 100%; background-repeat: no-repeat;}
+.panelround4{ background-image: url('../img/painel2_bt4_hover.png'); background-size: 100%; background-repeat: no-repeat;}
+.panelround5{ background-image: url('../img/painel2_bt5_hover.png'); background-size: 100%; background-repeat: no-repeat;}
+.panelround6{ background-image: url('../img/painel2_bt6_hover.png'); background-size: 100%; background-repeat: no-repeat;}
+.panelround7{ background-image: url('../img/painel2_bt7_hover.png'); background-size: 100%; background-repeat: no-repeat;}
 
 
-.panelround1:hover{ background-image: url('../img/painel2_bt1_hover.png');}
-.panelround2:hover{ background-image: url('../img/painel2_bt2_hover.png');}
-.panelround3:hover{ background-image: url('../img/painel2_bt3_hover.png');}
-.panelround4:hover{ background-image: url('../img/painel2_bt4_hover.png');}
-.panelround5:hover{ background-image: url('../img/painel2_bt5_hover.png');}
-.panelround6:hover{ background-image: url('../img/painel2_bt6_hover.png');}
-.panelround7:hover{ background-image: url('../img/painel2_bt7_hover.png');}
+.panelround1:hover{ background-image: url('../img/painel2_bt1.png');}
+.panelround2:hover{ background-image: url('../img/painel2_bt2.png');}
+.panelround3:hover{ background-image: url('../img/painel2_bt3.png');}
+.panelround4:hover{ background-image: url('../img/painel2_bt4.png');}
+.panelround5:hover{ background-image: url('../img/painel2_bt5.png');}
+.panelround6:hover{ background-image: url('../img/painel2_bt6.png');}
+.panelround7:hover{ background-image: url('../img/painel2_bt7.png');}
 
 .pagina.pg4 .container.bloco1{ padding-bottom: 300px !important;}
 .pagina.pg4{ padding-bottom: 100px !important;background-size: cover;}
@@ -309,6 +323,7 @@ margin-right: 0px;
    }
 
     .bloco1{
+        margin-top: 95px;
         padding-top: 15%;
         padding-bottom: 5%;
         }
